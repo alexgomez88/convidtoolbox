@@ -1,6 +1,8 @@
 const path = require('path');
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
+
 
 module.exports = {
   mode: "development",
@@ -55,5 +57,8 @@ module.exports = {
         encabezamiento: 'Aprendo Webpack en DesarrolloWeb.com',
       }
     }),
+    new CopyPlugin([
+      { from: 'src/res/', to: 'res/' , type:"dir"},
+    ], { copyUnmodified: true }),
   ]
 };

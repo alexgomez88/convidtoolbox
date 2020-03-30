@@ -8,11 +8,11 @@ const InDevelopment = () => (
     <ul>
       <li>
         <strong>Tips:</strong> Recursos científicamente validados, o certificados por la
-        OMS, para prevenir Convid-19.
+          OMS, para prevenir Covid-19.
       </li>
       <li>
         <strong>Consulta un Medico:</strong> Nuestro Dr. Jose Rafael Romero
-        contestará sus preguntas sobre el Convid-19.
+          contestará sus preguntas sobre el Covid-19.
       </li>
       <li>
         <strong>Historicos de cada pais:</strong> Consultar la evolución de la

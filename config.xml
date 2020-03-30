@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget id="ve.com.globalmaikan.convidtoolbox" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-    <name>CONVID ToolBox</name>
+<widget xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:gap="http://phonegap.com/ns/1.0"
+        id="ve.com.globalmaikan.covidtoolbox"
+        version="1.0.1"
+        xmlns="http://www.w3.org/ns/widgets">
+
+    <allow-navigation href="*"/>
+    <content src="index.html"/>
+    <content original-src="index.html"/>
+
+    <name>COVID-19 ToolBox</name>
     <description>
-        An App with realtime information about CONVID-19.
+        An App with realtime information about COVID-19.
     </description>
     <author email="globalmaikan@gmail.com" href="http://globalmaikan.com.ve">
         GlobalMaikan
     </author>
-    <content src="index.html" />
+
     <preference name="phonegap-version" value="cli-9.0.0" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="19" />
@@ -22,13 +31,6 @@
     <plugin name="cordova-plugin-inappbrowser" source="npm" spec="~1.7.1" />
     <plugin name="cordova-plugin-network-information" source="npm" spec="~1.3.3" />
     <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.5" />-->
-    <plugin name="cordova-plugin-whitelist" source="npm" spec="~1.3.4">
-        <access origin="*" />
-        <allow-intent href="*" />
-        <allow-navigation href="http://*/*" />
-        <allow-navigation href="https://*/*" />
-        <allow-navigation href="data:*" />
-    </plugin>
     <platform name="android">
         <icon density="ldpi" src="www/res/icon/android/ldpi.png" />
         <icon density="mdpi" src="www/res/icon/android/mdpi.png" />
@@ -42,6 +44,10 @@
         <splash density="port-xhdpi" src="www/res/screen/android/splash-port-xhdpi.png" />
         <splash density="port-xxhdpi" src="www/res/screen/android/splash-port-xxhdpi.png" />
         <splash density="port-xxxhdpi" src="www/res/screen/android/splash-port-xxxhdpi.png" />
+        <allow-intent href="market:*"/>
+        <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
+            <application android:usesCleartextTraffic="true"/>
+        </edit-config>
     </platform>
     <!--<platform name="ios">
         <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />
@@ -65,14 +71,14 @@
         <icon height="58" platform="ios" src="www/res/icon/ios/icon-small@2x.png" width="58" />
         <icon height="87" platform="ios" src="www/res/icon/ios/icon-small@3x.png" width="87" />
     </platform>-->
-    <access origin="*" />
-    <allow-intent href="http://*/*" />
-    <allow-intent href="https://*/*" />
-    <allow-intent href="tel:*" />
-    <allow-intent href="sms:*" />
-    <allow-intent href="mailto:*" />
-    <allow-intent href="geo:*" />
-    <platform name="android">
-        <allow-intent href="market:*" />
-    </platform>
+
+    <access origin="*"/>
+    <plugin name="cordova-plugin-whitelist" version="1"/>
+    <allow-intent href="http://*/*"/>
+    <allow-intent href="https://*/*"/>
+    <allow-intent href="tel:*"/>
+    <allow-intent href="sms:*"/>
+    <allow-intent href="mailto:*"/>
+    <allow-intent href="geo:*"/>
+
 </widget>

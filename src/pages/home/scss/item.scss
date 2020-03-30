@@ -1,0 +1,68 @@
+.country-item-list {
+  display: grid;
+  grid-template:
+    "head a c" 1fr
+    "head b d" 1fr / 2fr 1fr 1fr;
+  font-size: 0.8rem;
+  grid-gap: 0.5rem;
+  border-top: #333 solid 2px;
+  padding: 0.5rem 0;
+
+  &:nth-child(1) {
+    border: none;
+  }
+
+  #title {
+    grid-area: head;
+    display: flex;
+    margin: auto 0;
+  }
+
+  .symbold{
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 100%;
+    background-color: white;
+    box-shadow: #666 1px 1px 2px;
+  }
+  .text{
+    flex: 1;
+    text-align: end;
+    padding: 0 0.6rem;
+  }
+
+  #cases {
+    display: flex;
+    grid-area: a;
+    .symbold{
+      background-color: yellow;
+    }
+  }
+
+  #recovereds {
+    display: flex;
+    grid-area: b;
+    .symbold{
+      background-color: green;
+    }
+  }
+
+  #critical {
+    display: flex;
+    grid-area: c;
+    .symbold{
+      background-color: red;
+    }
+  }
+
+  #deaths {
+    display: flex;
+    grid-area: d;
+    .symbold{
+      background-color: black;
+    }
+  }
+
+  
+}

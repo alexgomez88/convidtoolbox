@@ -1,0 +1,71 @@
+article.global-section {
+  --background-color: #333;
+  --background-color-dark: #444;
+  --text-color: #ccc;
+
+  max-width: 600px;
+  width: 100%;
+  margin: 1rem auto;
+  display: grid;
+  grid-template:
+    "top top top" auto
+    "left center right" auto / 1fr 1fr 1fr;
+  background: radial-gradient(
+    var(--background-color-dark) 40%,
+    var(--background-color) 70%
+  );
+  grid-gap: 2px;
+  overflow: hidden;
+  color: var(--text-color);
+
+  h1 {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 0.6rem;
+    margin: 0;
+  }
+
+  #cases {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color);
+    grid-area: top;
+    padding: 10px;
+    font-size: 4rem;
+    .title {
+      font-size: 1rem;
+      font-weight: 700;
+    }
+  }
+
+  .lower {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color);
+    padding: 10px;
+    font-size: 1rem;
+
+    .title {
+      font-size: 0.7rem;
+      font-weight: 700;
+    }
+  }
+
+  #recovereds {
+    grid-area: left;
+  }
+
+  #critical {
+    grid-area: center;
+  }
+
+  #deaths {
+    grid-area: right;
+  }
+}

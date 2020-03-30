@@ -1,0 +1,28 @@
+.base-menu {
+  .navbar-center {
+    display: flex;
+    flex: 1 1;
+    height: 4rem;
+    background-color: #aaa;
+
+    .navbar-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      background-color: #aaa;
+      color: #333;
+      text-decoration: none;
+
+      span {
+        font-size: 0.8rem;
+      }
+
+      &:active {
+        color: #222;
+        background-color: #777;
+      }
+    }
+  }
+}

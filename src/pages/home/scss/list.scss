@@ -1,0 +1,92 @@
+.countries-background {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+
+  div.countries-list {
+    --background-color-contrast: #ddd;
+    --shadows-color: #222;
+
+    flex: 1 1;
+    padding: 2rem 1rem;
+    margin-top: 14rem;
+    background: var(--background-color-contrast);
+    border-radius: 1.5rem 1.5rem 0 0;
+    box-shadow: var(--shadows-color) 0px -5px 5px;
+
+    .legend {
+      display: flex;
+      margin: 1rem 0;
+
+      font-size: 0.8rem;
+      span {
+        margin: auto;
+        display: flex;
+        align-items: center;
+
+        &::before {
+          content: "";
+          display: inline-block;
+          border-radius: 100%;
+          height: 1rem;
+          width: 1rem;
+          background-color: greenyellow;
+          margin: 0 2px;
+          box-shadow: #666 1px 1px 2px;
+        }
+
+        &#cases::before {
+            background-color: yellow;
+        }
+
+        &#recovereds::before {
+            background-color: green;
+        }
+
+        &#critical::before  {
+            background-color: red;
+        }
+
+        &#deaths::before{
+            background-color: black;
+        }
+      }
+    }
+
+    form.filter {
+      display: flex;
+
+      input {
+        flex: 1 1;
+        height: 1.5rem;
+        background-color: #eee;
+        border: #222 solid 1px;
+        border-radius: 0.2rem;
+        margin: 0.2rem 0.3rem 0.2rem 0;
+      }
+
+      select {
+        flex: 0 0;
+        background-color: #eee;
+        border: #222 solid 1px;
+        border-radius: 0.2rem;
+        margin: 0.2rem 0.3rem 0.2rem 0;
+      }
+      
+      button{
+        flex: 0 0;
+        background-color: #eee;
+        border: #222 solid 1px;
+        border-radius: 0.2rem;
+        margin: 0.2rem 0 0.2rem 0;
+      }
+    }
+  }
+}

@@ -52,8 +52,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.35"
-     inkscape:cx="-310.59413"
-     inkscape:cy="551.42857"
+     inkscape:cx="-127.71429"
+     inkscape:cy="545.71428"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -76,7 +76,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -96,18 +96,18 @@
     <flowRoot
        xml:space="preserve"
        id="flowRoot4546"
-       style="font-style:normal;font-weight:normal;font-size:146.66667175px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:19.80000037;stroke-miterlimit:4;stroke-dasharray:none"
+       style="font-style:normal;font-weight:normal;font-size:146.66667175px;line-height:1.25;font-family:sans-serif;text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:19.80000114;stroke-miterlimit:4;stroke-dasharray:none"
        transform="matrix(0.26458333,0,0,0.26458333,-10.583333,23.042841)"><flowRegion
          id="flowRegion4548"
-         style="font-size:146.66667175px;text-align:center;text-anchor:middle;stroke-width:19.80000037;stroke-miterlimit:4;stroke-dasharray:none"><rect
+         style="font-size:146.66667175px;text-align:center;text-anchor:middle;stroke-width:19.80000114;stroke-miterlimit:4;stroke-dasharray:none"><rect
            id="rect4550"
            width="877.14282"
            height="642.85706"
            x="120"
            y="315.42856"
-           style="font-size:146.66667175px;text-align:center;text-anchor:middle;stroke-width:19.80000037;stroke-miterlimit:4;stroke-dasharray:none" /></flowRegion><flowPara
+           style="font-size:146.66667175px;text-align:center;text-anchor:middle;stroke-width:19.80000114;stroke-miterlimit:4;stroke-dasharray:none" /></flowRegion><flowPara
          id="flowPara4552"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:186.66670227px;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa Bold';text-anchor:middle;text-align:center;stroke:#ffffff;stroke-opacity:1;fill:#ffffff;fill-opacity:1;stroke-width:19.80000037;stroke-miterlimit:4;stroke-dasharray:none">CONVID</flowPara><flowPara
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:213.33338311px;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:19.80000114;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">COVID</flowPara><flowPara
          id="flowPara4554"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:186.66670227px;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa Bold';text-anchor:middle;text-align:center;stroke:#ffffff;stroke-opacity:1;fill:#ffffff;fill-opacity:1;stroke-width:19.80000037;stroke-miterlimit:4;stroke-dasharray:none">ToolBox</flowPara></flowRoot>  </g>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:186.66670227px;font-family:Comfortaa;-inkscape-font-specification:'Comfortaa Bold';text-align:center;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:19.80000114;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1">ToolBox</flowPara></flowRoot>  </g>
 </svg>

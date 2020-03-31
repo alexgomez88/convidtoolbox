@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<widget xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:gap="http://phonegap.com/ns/1.0"
-        id="ve.com.globalmaikan.covidtoolbox"
-        version="1.0.1"
-        xmlns="http://www.w3.org/ns/widgets">
+<widget xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gap="http://phonegap.com/ns/1.0" id="ve.com.globalmaikan.covidtoolbox" version="1.0.1" xmlns="http://www.w3.org/ns/widgets">
 
-    <allow-navigation href="*"/>
-    <content src="index.html"/>
-    <content original-src="index.html"/>
+    <allow-navigation href="*" />
+    <content src="index.html" />
+    <content original-src="index.html" />
 
     <name>COVID-19 ToolBox</name>
     <description>
@@ -20,6 +16,8 @@
     <preference name="phonegap-version" value="cli-9.0.0" />
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="19" />
+
+    <plugin name="cordova-plugin-admob" source="npm" />
     <!--<plugin name="cordova-plugin-battery-status" source="npm" spec="~1.2.4" />
     <plugin name="cordova-plugin-camera" source="npm" spec="~2.4.1" />
     <plugin name="cordova-plugin-media-capture" source="npm" spec="~1.4.3" />
@@ -44,10 +42,14 @@
         <splash density="port-xhdpi" src="www/res/screen/android/splash-port-xhdpi.png" />
         <splash density="port-xxhdpi" src="www/res/screen/android/splash-port-xxhdpi.png" />
         <splash density="port-xxxhdpi" src="www/res/screen/android/splash-port-xxxhdpi.png" />
-        <allow-intent href="market:*"/>
+        <allow-intent href="market:*" />
         <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
-            <application android:usesCleartextTraffic="true"/>
+            <application android:usesCleartextTraffic="true" />
         </edit-config>
+        <config-file parent="/manifest/application" target="AndroidManifest.xml">
+            <!-- TODO: Replace with your real AdMob app ID -->
+            <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-7611014775630061~6996187727" />
+        </config-file>
     </platform>
     <!--<platform name="ios">
         <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />
@@ -72,13 +74,13 @@
         <icon height="87" platform="ios" src="www/res/icon/ios/icon-small@3x.png" width="87" />
     </platform>-->
 
-    <access origin="*"/>
-    <plugin name="cordova-plugin-whitelist" version="1"/>
-    <allow-intent href="http://*/*"/>
-    <allow-intent href="https://*/*"/>
-    <allow-intent href="tel:*"/>
-    <allow-intent href="sms:*"/>
-    <allow-intent href="mailto:*"/>
-    <allow-intent href="geo:*"/>
+    <access origin="*" />
+    <plugin name="cordova-plugin-whitelist" version="1" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
 
 </widget>

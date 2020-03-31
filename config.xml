@@ -17,7 +17,9 @@
     <preference name="DisallowOverscroll" value="true" />
     <preference name="android-minSdkVersion" value="19" />
 
-    <plugin name="cordova-plugin-admob" source="npm" />
+    <plugin name="cordova-plugin-admob-free" source="npm">
+        <variable name="ADMOB_APP_ID" value="ca-app-pub-7611014775630061~6996187727"/>
+    </plugin>
     <!--<plugin name="cordova-plugin-battery-status" source="npm" spec="~1.2.4" />
     <plugin name="cordova-plugin-camera" source="npm" spec="~2.4.1" />
     <plugin name="cordova-plugin-media-capture" source="npm" spec="~1.4.3" />
@@ -46,10 +48,6 @@
         <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application">
             <application android:usesCleartextTraffic="true" />
         </edit-config>
-        <config-file parent="/manifest/application" target="AndroidManifest.xml">
-            <!-- TODO: Replace with your real AdMob app ID -->
-            <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-7611014775630061~6996187727" />
-        </config-file>
     </platform>
     <!--<platform name="ios">
         <icon height="57" platform="ios" src="www/res/icon/ios/icon.png" width="57" />
